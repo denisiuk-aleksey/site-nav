@@ -1,0 +1,81 @@
+:root {
+  --bg-col-navig: #47986d;
+  --bg-col-navig-hover: #3c805b;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.navigation {
+  list-style: none;
+  font-size: 0;
+}
+
+.list-item {
+  position: relative;
+
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;  
+  background-color: var(--bg-col-navig);
+  border: 1px solid var(--bg-col-navig-hover);
+
+  color: white;
+}
+
+.list-item:hover > .sub-list{
+  display: block;
+}
+
+.list-item:hover{
+  background-color: var(--bg-col-navig-hover);
+}
+
+.sub-list{
+  display: none;
+  position: absolute;
+  padding: 0;
+
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.sub-list-for-woman{
+  margin: 0;
+  text-decoration: none;
+  background-color: var(--bg-col-navig);
+  border: 1px solid var(--bg-col-navig-hover);
+
+  display: none;
+  position: absolute;
+  padding: 0;
+
+  top: 0;
+  left: 100%;
+}
+
+.sub-list-item:hover > .sub-list-for-woman{
+  display: block;
+}
+
+.sub-list-item:hover{
+  background-color: var(--bg-col-navig-hover);
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: inherit;
+
+  width: 100%;
+}
+
+.sub-list-item{
+  position: relative;
+  background-color: var(--bg-col-navig);
+  border: 1px solid var(--bg-col-navig-hover);
+}
